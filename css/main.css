@@ -19,15 +19,22 @@ body{
     margin: auto;
 }
 header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     background-color: #000000;
     color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
 
 ul{
     display: flex;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
+    padding-top: 10px;
 }
 
 li{
@@ -35,3 +42,42 @@ li{
     list-style-type: none;
 }
 
+.intro{
+    background-image:url(../images/hero-background.jpg) ;
+    height: 75vh;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.transparent{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.service{
+    background-color:#f3f0e9;
+}
+
+.images{
+    margin: auto;
+    padding: 15px;
+    box-sizing:border-box;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "le le"
+                         "cb pc"
+                         "tc se";
+}
+
+#le{grid-area: le;}
+#cb{grid-area: cb;}
+#pc{grid-area: pc;}
+#tc{grid-area: tc;}
+#se{grid-area: se;}
