@@ -14,7 +14,7 @@ p{
     font-size: 16px;
 }
 
-body{
+.wrapper{
     max-width: 1200px;
     margin: auto;
 }
@@ -74,6 +74,10 @@ li{
     grid-template-areas: "le le"
                          "cb pc"
                          "tc se";
+}
+
+img{
+    width: 100%;
 }
 
 #le{grid-area: le;}
