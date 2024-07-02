@@ -50,6 +50,7 @@ li{
     background-size: contain;
     background-size: cover;
     background-position: center;
+    margin-bottom: 0;
 
 }
 
@@ -63,11 +64,11 @@ li{
 
 .service{
     background-color:#f3f0e9;
+    margin-top: 0;
 }
 
 .images{
     margin: auto;
-    padding: 15px;
     box-sizing:border-box;
     display: grid;
     grid-template-columns: repeat(2,1fr);
