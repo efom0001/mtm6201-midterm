@@ -17,6 +17,7 @@ p{
 .wrapper{
     max-width: 1200px;
     margin: auto;
+    background-color: #f3f0e9;;
 }
 header{
     display: flex;
@@ -65,12 +66,21 @@ li{
 .service{
     background-color:#f3f0e9;
     margin-top: 0;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+.introP{
+    text-align: start;
+    color: #d69e3d;
+    font-size: 18px;
 }
 
 .images{
     margin: auto;
     box-sizing:border-box;
     display: grid;
+    gap: 10px;
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: "le le"
                          "cb pc"
@@ -86,3 +96,73 @@ img{
 #pc{grid-area: pc;}
 #tc{grid-area: tc;}
 #se{grid-area: se;}
+
+.orange{
+    color: #d69e3d;
+    font-size: 18px;
+    text-align: center;
+}
+
+.offer{
+    margin-top: 60px;
+    padding: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.offer > h2{
+    text-align: center;
+}
+
+.offer p{
+    text-align: center;
+}
+
+.offer > img{
+    width: 200px;
+
+}
+
+.menu{
+    height: 100vh;
+    background-image: url(../images/coffee-shop.jpeg);
+    background-size: contain;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.about{
+    padding: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.brown{
+    color: #966f2c;
+    font-size: 18px;
+    text-align: start; 
+}
+
+.testimonial{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.t1{
+    height: 80vh;
+    background-image: url(../images/testimonial-1.jpeg);
+    background-size: contain;
+    background-size: cover;
+    background-position: center;
+}
+
+.layer{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    justify-items: end;
+    color: #ffffff;
+}
