@@ -107,7 +107,7 @@ li{
 
 .introP{
     text-align: start;
-    color: #d69e3d;
+    color: #966f2c;
     font-size: 18px;
 }
 
@@ -200,6 +200,11 @@ img{
     padding-bottom: 100px;
 }
 
+.about>h2{
+    margin-top: 15PX;
+    margin-bottom: 15PX;
+}
+
 .brown{
     color: #D69E3D;
     font-size: 18px;
@@ -212,6 +217,11 @@ img{
     padding: 10px;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.testimonial>h2{
+    display: block;
+    width: 75%;
 }
 
 .t1{
@@ -262,4 +272,19 @@ footer{
     padding-bottom: 50px;
     height: 50px;
     text-align: center;
+}
+
+
+@media screen and (min-width: 768px){
+
+    .offer > h2{
+        width: 50%;
+    }
+
+    .images{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: "le le cb pc"
+                             "le le tc se";
+    }
+
 }
