@@ -3,6 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="css/main.css">
         <title>Document</title>
     </head>
@@ -12,9 +17,9 @@
             <header>
                 <img class="logo" src="images/my-coffee-shop-logo.svg" alt="shop logo">
                 <Ul>
-                    <li>ABOUT US</li>
-                    <li>MENU</li>
-                    <li>LOCATIONS</li>
+                    <li><a class="btnn" href="#aboutUs">ABOUT US</a></li>
+                    <li><a class="btnn" href="#theMenu">MENU</a></li>
+                    <li><a class="btnn" href="#locations">LOCATIONS</a></li>
                 </Ul>
             </header>
 
@@ -25,7 +30,7 @@
 
                         <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
 
-                        <a href="#">Explore our menu</a>
+                        <a href="#">EXPLORE OUR MENU</a>
                     </div>
 
                 </section>
@@ -43,73 +48,96 @@
                     </div>
 
                     <div class="offer">
-                        <p class="orange">WHAT WE OFFER</p>
-                        <h2>WHY VISIT US?</h2>
 
-                        <img src="images/fair-trade.svg" alt="">
-                        <h2>FAIR TRADE COFFEE</h2>
-                        <p>We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
+                        <div class="we-offer">
+                            <p class="orange">WHAT WE OFFER</p>
+                            <h2>WHY VISIT US?</h2>
+                        </div>
 
-                        <img src="images/local-baked-goods.svg" alt="">
-                        <h2>LOCAL BAKED GOODS</h2>
-                        <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
+                        <div class="fair-trade">
+                            <img src="images/fair-trade.svg" alt="">
+                            <h2>FAIR TRADE COFFEE</h2>
+                            <p>We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
+                        </div>
 
-                        <img src="images/made-with-love.svg" alt="">
-                        <h2>MADE WITH LOVE</h2>
-                        <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
+                        <div class="local-baked">
+                            <img src="images/local-baked-goods.svg" alt="">
+                            <h2>LOCAL BAKED GOODS</h2>
+                            <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
+                        </div>
+
+                        <div class="with-love">
+                            <img src="images/made-with-love.svg" alt="">
+                            <h2>MADE WITH LOVE</h2>
+                            <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
+                        </div>
+
                     </div>
 
 
                 
                 </section>
-                <section class="menu">
+                <section class="menu" id="theMenu">
 
                     <div class="transparent2">
-                        <p class="orange">OUR MENU</p>
-                        <h2>EXPLORE WHAT WE HAVE TO OFFER YOU</h2>
-                        <a href="#">EXPLORE OUR MENU</a>
+                        <div>
+                            <p class="orange">OUR MENU</p>
+                            <h2>EXPLORE WHAT WE HAVE TO OFFER YOU</h2>
+                            <a href="#">EXPLORE OUR MENU</a>
+                        </div>
 
-                        <p class="orange">LOCATIONS</p>
-                        <h2>FIND YOUR NEAREST COFFEE SHOP</h2>
-                        <a href="#">VIEW LOCATIONS</a>
+                        <div id="locations">
+                            <p class="orange">LOCATIONS</p>
+                            <h2>FIND YOUR NEAREST COFFEE SHOP</h2>
+                            <a href="#">VIEW LOCATIONS</a>
+                        </div>
+
                     </div>
 
                 </section>
 
                 <section class="about" id="aboutUs">
-                    <img src="images/about-us.jpeg" alt="">
-                    <p class="introP">ABOUT US</p>
-                    <h2>READ OUR STORY</h2>
-                    <p>In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike.</p>
+                    <img src="images/about-us.jpeg" alt="employee serving coffee">
 
-                    <p>My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.</p>
+                    <div>
+                        <p class="introP">ABOUT US</p>
+                        <h2>READ OUR STORY</h2>
+                        <p>In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike.</p>
+    
+                        <p>My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.</p>
+    
+                        <a class="btna" href="#">Learn more</a>
+                    </div>
 
-                    <a href="#">Learn more</a>
                 </section>
             </main>
 
             <aside class="testimonial">
                 <p class="brown">TESTIMONIALS</p>
                 <h2>WHAT OUR CUSTOMERS SAY ABOUT US</h2>
-                <div class="testimonial t1">
-                    <div class="layer">
-                        <p><blockquote>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</blockquote></p>
-                        <p class="brown">JANE D., TORONTO</p>
-                    </div>
-                </div>
-                <div class="testimonial t2">
-                    <div class="layer">
-                        <p><blockquote>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</blockquote></p>
-                        <p class="brown">SCOTT S., OTTAWA</p>
-                    </div>
 
-                </div>
-                <div class="testimonial t3">
-                    <div class="layer">
-                        <p><blockquote>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</blockquote></p>
-                        <p class="brown">SUSIE F., OTTAWA</p>
+                <div>
+                    <div class="t1">
+                        <div class="layer">
+                            <p><blockquote>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</blockquote></p>
+                            <p class="brown">JANE D., TORONTO</p>
+                        </div>
+                    </div>
+                    <div class="t2">
+                        <div class="layer">
+                            <p><blockquote>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</blockquote></p>
+                            <p class="brown">SCOTT S., OTTAWA</p>
+                        </div>
+    
+                    </div>
+                    <div class="t3">
+                        <div class="layer">
+                            <p><blockquote>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</blockquote></p>
+                            <p class="brown">SUSIE F., OTTAWA</p>
+                        </div>
                     </div>
                 </div>
+
             </aside>
 
 

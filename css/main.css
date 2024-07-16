@@ -1,8 +1,12 @@
 h1{
+    font-family: lato;
+    font-weight:900;
     font-size: 2.027rem;
 }
 
 h2{
+    font-family: lato;
+    font-weight:700;
     font-size: 1.802rem;
 }
 
@@ -11,7 +15,14 @@ h3{
 }
 
 p{
+    font-family: karla;
     font-size: 16px;
+}
+
+
+body{
+    background-color: lightgray;
+    margin: 0;
 }
 
 .wrapper{
@@ -34,15 +45,66 @@ header{
     width: 40%;
 }
 
+.logo:hover{
+    transform: rotateY(720deg);
+    transition: 1s ease-in-out;
+}
+
 a{
     background-color: #ffffff;
     color: #000000;
     padding: 15px 30px;
     text-decoration: none;
+    font-family: karla;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
     display: inline-block;
     transition: background-color 0.3s ease
+}
+
+
+a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    border: #ffffff 2px solid;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px white;
+}
+
+.btnn:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    border: #ffffff 0 solid;
+    color: #ffffff;
+    padding: 0;
+    box-shadow: 0 0 10px white; 
+}
+
+.btna{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-family: karla;
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    transition: background-color 0.3s ease  
+}
+
+.btna:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: #000000 2px solid;
+    color: #000000;
+    padding: 20px;
+    box-shadow: 0 0 10px #000000; 
+}
+
+header a{
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 0;
 }
 
 
@@ -109,6 +171,7 @@ li{
     text-align: start;
     color: #966f2c;
     font-size: 18px;
+    font-weight: 700;
 }
 
 .images{
@@ -135,6 +198,7 @@ img{
 .orange{
     color: #966f2c;
     font-size: 18px;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -145,7 +209,9 @@ img{
     margin-right: 20px;
 }
 
-.offer > h2{
+.offer  h2{
+    display: block;
+    margin: auto;
     text-align: center;
 }
 
@@ -153,7 +219,7 @@ img{
     text-align: center;
 }
 
-.offer > img{
+.offer  img{
     display: block;
     width: 200px;
     margin: auto;
@@ -178,7 +244,7 @@ img{
     color: #ffffff;
 }
 
-.transparent2>h2{
+.transparent2 h2{
     display: block;
     width: 75%;
     margin: auto;
@@ -186,11 +252,11 @@ img{
     margin-top: 0;
 }
 
-.transparent2>p{
+.transparent2 p{
     margin-bottom: 0;
 }
 
-.transparent2>a{
+.transparent2 a{
     margin-bottom: 50px;
 }
 
@@ -208,10 +274,11 @@ img{
 .brown{
     color: #D69E3D;
     font-size: 18px;
+    font-weight: 700;
     text-align: start; 
 }
 
-.testimonial{
+.testimonial, .t1, .t2, .t3{
     background-color: #000000;
     color: #ffffff;
     padding: 10px;
@@ -287,4 +354,108 @@ footer{
                              "le le tc se";
     }
 
+    .we-offer{grid-area: wo;}
+    .fair-trade{grid-area: ft;}
+    .local-baked{grid-area: lb;}
+    .with-love{grid-area: wl;}
+
+    .offer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: ". wo wo ."
+                             "ft ft lb lb"
+                             ". wl wl .";
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        gap: 20px;
+
+        padding-bottom: 50px;
+
+    }
+
+    .transparent2{
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+
+    .about img{
+        width: 50%;
+    }
+    .about{
+        display: flex;
+        gap: 20px;
+    }
+
+    .testimonial>div{
+        display: flex;
+        gap: 10px;
+    }
+
+    .t1,.t2,.t3{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
 }
+
+
+@media screen and (min-width: 1100px){
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 0;
+        padding-top: 0;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .logo{
+        width: 200px;
+    }
+
+    .transparent{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .service, .about, .testimonial, footer{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .offer{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: ". wo ."
+                             "ft lb wl";
+        gap:20px
+    }
+
+    .offer img{
+        width: 100px;
+    }
+
+    .menu{
+        height: 45vh;
+    }
+
+    .transparent2{
+        justify-content: center;
+    }
+
+    .testimonial{
+        height: 70vh;
+    }
+
+    .t1,.t2,.t3{
+        height: 300px;
+        padding-bottom: 0;
+    }
+
+}
+
