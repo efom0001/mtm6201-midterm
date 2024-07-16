@@ -9,21 +9,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="css/main.css">
-        <title>Document</title>
+        <title>My Coffee Company</title>
     </head>
     <body>
+        <!-- Skip link for screen readers -->
+        <a href="#main-content" class="skip-link">Skip to main content</a>
 
         <div class="wrapper">
             <header>
-                <img class="logo" src="images/my-coffee-shop-logo.svg" alt="shop logo">
-                <Ul>
-                    <li><a class="btnn" href="#aboutUs">ABOUT US</a></li>
-                    <li><a class="btnn" href="#theMenu">MENU</a></li>
-                    <li><a class="btnn" href="#locations">LOCATIONS</a></li>
-                </Ul>
+                <img class="logo" src="images/my-coffee-shop-logo.svg" alt="My Coffee Company logo">
+                <nav aria-label="Main navigation">
+                    <ul>
+                        <li><a class="btnn" href="#aboutUs">ABOUT US</a></li>
+                        <li><a class="btnn" href="#theMenu">MENU</a></li>
+                        <li><a class="btnn" href="#locations">LOCATIONS</a></li>
+                    </ul>
+                </nav>
             </header>
 
-            <main>
+            <main id="main-content">
                 <section class="intro">
                     <div class="transparent">
                         <h1>EXPERIENCE COFFEE LIKE NEVER BEFORE</h1>
@@ -40,11 +44,11 @@
                     <p class="introP">WELCOME TO MY COFFEE HOUSE</p>
                     <h2>EXPERIENCE A NEW WAY TO TASTE COFFEE</h2>
                     <div class="coffee images">
-                        <img src="images/latte.jpeg" alt="latte" id="le">
-                        <img src="images/coffee-beans.jpeg" alt="coffee beans" id="cb">
-                        <img src="images/pouring-coffee.jpeg" alt="pouring coffee" id="pc">
-                        <img src="images/three-cups.jpeg" alt="three cups" id="tc">
-                        <img src="images/smiling-employee.jpeg" alt="smiling employee" id="se">
+                        <img src="images/latte.jpeg" alt="Latte coffee" id="le">
+                        <img src="images/coffee-beans.jpeg" alt="Coffee beans" id="cb">
+                        <img src="images/pouring-coffee.jpeg" alt="Pouring coffee" id="pc">
+                        <img src="images/three-cups.jpeg" alt="Three cups of coffee" id="tc">
+                        <img src="images/smiling-employee.jpeg" alt="Smiling employee serving coffee" id="se">
                     </div>
 
                     <div class="offer">
@@ -55,19 +59,19 @@
                         </div>
 
                         <div class="fair-trade">
-                            <img src="images/fair-trade.svg" alt="">
+                            <img src="images/fair-trade.svg" alt="Fair trade logo">
                             <h2>FAIR TRADE COFFEE</h2>
                             <p>We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
                         </div>
 
                         <div class="local-baked">
-                            <img src="images/local-baked-goods.svg" alt="">
+                            <img src="images/local-baked-goods.svg" alt="Local baked goods logo">
                             <h2>LOCAL BAKED GOODS</h2>
                             <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
                         </div>
 
                         <div class="with-love">
-                            <img src="images/made-with-love.svg" alt="">
+                            <img src="images/made-with-love.svg" alt="Made with love logo">
                             <h2>MADE WITH LOVE</h2>
                             <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
                         </div>
@@ -77,7 +81,7 @@
 
                 
                 </section>
-                <section class="menu" id="theMenu">
+                <section class="menu" id="theMenu" aria-label="Menu section">
 
                     <div class="transparent2">
                         <div>
@@ -96,8 +100,8 @@
 
                 </section>
 
-                <section class="about" id="aboutUs">
-                    <img src="images/about-us.jpeg" alt="employee serving coffee">
+                <section class="about" id="aboutUs" aria-label="About us section">
+                    <img src="images/about-us.jpeg" alt="Employee serving coffee at My Coffee House">
 
                     <div>
                         <p class="introP">ABOUT US</p>
@@ -147,7 +151,5 @@
             </footer>
         </div>
 
-        
-        
     </body>
 </html>
